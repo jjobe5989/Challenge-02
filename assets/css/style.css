@@ -1,60 +1,67 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #d9dcd6;
+ .navbar {
+display: flex;
+justify-content: right;
+align-items: center;
+position: sticky;
+top: 0;
+background-color: #51515a;
 }
 
-.Title {
-    padding: 20px;
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    color: black;
+}
+
+.navbar ul li {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #50a16b;
-    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
-
-.Title h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-.Title div {
-    padding-top: 10px;
-    margin-right: 20px;
-    float: right;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    font-size: 20px;
-}
-
-.Title div ul {
-    list-style-type: none;
-}
-
-.Title div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
+.navbar ul li a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    transition: all ,5s ease;
 }
 
-p {
-    font-size: 20px;
-    margin-left: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.navbar ul li a:hover{
+    background-color: aliceblue;
+    color: #000000;
+    box-shadow: 0 0 10px white;
 }
 
-.Work h1 {
-    display: inline-block;
-    font-size: 35px;
-}
 
-.Work img {
-    max-height: 200px;
-    margin-top: 50px;
-    border: 15px black;
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color:#51515a;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('online-reputation-management.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
 }
