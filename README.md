@@ -22,3 +22,6 @@ I am an up and coming software developer, who is curretly in the Vanderbilt codi
 
 Link to my final website: https://jjobe5989.github.io/Challenge-02/
 
+<h1>License</h1>
+
+
